@@ -11,7 +11,7 @@
                 success:function (result) {
                     var str="";
                     $.each(JSON.parse(result),function (index,row,ss) {
-                        str+="<tr><td>"+row.startcity+"</td><td>"+row.endcity+"</td></tr>"
+                        str+="<tr><td>"+row.flightid+"</td><td>"+row.flightnum+"</td><td>"+row.flydate+"</td><td>"+row.starttime+"</td><td>"+row.flytime+"</td><td>"+row.startcity+"</td><td>"+row.endcity+"</td><td>"+row.seatnum+"</td></tr>"
                     });
                     $("#tbody").html(str);
                 }
@@ -23,8 +23,14 @@
 <body>
 <table class="layui-table">
     <tr>
+        <td>ID</td>
+        <td>航班号</td>
+        <td>飞行日期</td>
+        <td>开始时间</td>
+        <td>飞行时间</td>
         <td>开始城市</td>
         <td>结束城市</td>
+        <td>座位数</td>
     </tr>
     <tbody id="tbody"></tbody>
 </table>

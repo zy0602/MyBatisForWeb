@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(name = "FlightServlet",urlPatterns = "/FlightServlet")
+@WebServlet(name = "FlightServlet",urlPatterns = "/flightServlet")
 public class FlightServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
